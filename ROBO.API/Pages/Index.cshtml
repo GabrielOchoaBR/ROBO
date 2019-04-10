@@ -1,0 +1,77 @@
+﻿@page "{AcaoQueryString?}"
+
+@Html.AntiForgeryToken()
+
+@model ROBO.API.Pages.IndexModel
+
+<form style="        padding-top: 40px" method="get" action="/">
+    <h2>Comportamentos</h2>
+
+    <h3>Cabeça</h3>
+    <div class="row show-grid text-center" style="        background: #f9f9f9;
+        border-radius: 5px;
+        padding: 20px">
+        <div class="col-md-4">
+            <div>Rotação:@Model.CabecaRotacaoEstado</div>
+            <div>
+                <button type="submit" name="AcaoQueryString" value="CabecaRotacao-Proximo">Proximo</button>
+                <button type="submit" name="AcaoQueryString" value="CabecaRotacao-Anterior">Anterior</button>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div>Inclinação:@Model.CabecaInclinacaoEstado</div>
+            <div>
+                <button type="submit" name="AcaoQueryString" value="CabecaInclinacao-Proximo">Proximo</button>
+                <button type="submit" name="AcaoQueryString" value="CabecaInclinacao-Anterior">Anterior</button>
+            </div>
+        </div>
+    </div>
+
+    <h3>Cotovelo</h3>
+    <div class="row show-grid text-center" style="        background: #f9f9f9;
+        border-radius: 5px;
+        padding: 20px">
+        <div class="col-md-4">
+            <div>Estado:@Model.CotoveloEsquerdoEstado</div>
+            <div>
+                <button type="submit" name="AcaoQueryString" value="CotoveloEsquerdo-Proximo">Proximo</button>
+                <button type="submit" name="AcaoQueryString" value="CotoveloEsquerdo-Anterior">Anterior</button>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div>Estado:@Model.CotoveloDireitoEstado</div>
+            <div>
+                <button type="submit" name="AcaoQueryString" value="CotoveloDireito-Proximo">Proximo</button>
+                <button type="submit" name="AcaoQueryString" value="CotoveloDireito-Anterior">Anterior</button>
+            </div>
+        </div>
+    </div>
+
+    <h3>Pulso</h3>
+    <div class="row show-grid text-center" style="        background: #f9f9f9;
+        border-radius: 5px;
+        padding: 20px">
+        <div class="col-md-4">
+            <div>Estado:@Model.PulsoEsquerdoEstado</div>
+            <div>
+                <button type="submit" name="AcaoQueryString" value="PulsoEsquerdo-Proximo">Proximo</button>
+                <button type="submit" name="AcaoQueryString" value="PulsoEsquerdo-Anterior">Anterior</button>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div>Estado:@Model.PulsoDireitoEstado</div>
+            <div>
+                <button type="submit" name="AcaoQueryString" value="PulsoDireito-Proximo">Proximo</button>
+                <button type="submit" name="AcaoQueryString" value="PulsoDireito-Anterior">Anterior</button>
+            </div>
+        </div>
+    </div>
+    <h4>Debug</h4>
+    <div class=".col-xs-12">
+        <textarea style="width: 100%;
+        height: 200px" >@Model.ClasseRobo</textarea>
+    </div>
+</form>

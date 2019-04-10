@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "1d22a33b-b7b6-4506-a62c-723cbaa3d6ce",
+		"name": "ROBO - CAB INCLINACAO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cabeca Inclinacao - Get Raíz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/Cabeca/Inclinacao/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"Cabeca",
+						"Inclinacao",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstadoAtual",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/Cabeca/Inclinacao/EstadoAtual",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"Cabeca",
+						"Inclinacao",
+						"EstadoAtual"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProximoEstado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/Cabeca/Inclinacao/ProximoEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"Cabeca",
+						"Inclinacao",
+						"ProximoEstado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AnteriorEstado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"teste\""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/Cabeca/Inclinacao/AnteriorEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"Cabeca",
+						"Inclinacao",
+						"AnteriorEstado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MudarEstado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"EmRepouso\""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/Cabeca/Inclinacao/MudarEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"Cabeca",
+						"Inclinacao",
+						"MudarEstado"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

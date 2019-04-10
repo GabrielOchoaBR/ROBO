@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "7d705e2d-b4c6-4c9d-bf0a-f87ca1bee022",
+		"name": "ROBO - PUL - DIREITO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cotovelo - Get Raíz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/BracoDireito/Pulso/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"BracoDireito",
+						"Pulso",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstadoAtual",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/BracoDireito/Pulso/EstadoAtual",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"BracoDireito",
+						"Pulso",
+						"EstadoAtual"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProximoEstado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/BracoDireito/Pulso/ProximoEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"BracoDireito",
+						"Pulso",
+						"ProximoEstado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AnteriorEstado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"teste\""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/BracoDireito/Pulso/AnteriorEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"BracoDireito",
+						"Pulso",
+						"AnteriorEstado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MudarEstado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Pos_45\""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/BracoDireito/Pulso/MudarEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"BracoDireito",
+						"Pulso",
+						"MudarEstado"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

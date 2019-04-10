@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "ac20855b-a533-4d67-b028-b4125cda150c",
+		"name": "ROBO - CAB ROTACAO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cabeca Rotacao - Get Raiz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/Cabeca/Rotacao/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"Cabeca",
+						"Rotacao",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstadoAtual",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/Cabeca/Rotacao/EstadoAtual",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"Cabeca",
+						"Rotacao",
+						"EstadoAtual"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MudarEstado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"EmRepouso\""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/Cabeca/Rotacao/MudarEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"Cabeca",
+						"Rotacao",
+						"MudarEstado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AnteriorEstado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"teste\""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/Cabeca/Rotacao/AnteriorEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"Cabeca",
+						"Rotacao",
+						"AnteriorEstado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProximoEstado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/Cabeca/Rotacao/ProximoEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"Cabeca",
+						"Rotacao",
+						"ProximoEstado"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

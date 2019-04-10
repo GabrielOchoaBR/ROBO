@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "4b43b13c-cda0-479d-8871-dbe58f13f29d",
+		"name": "ROBO - COT DIREITO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cotovelo - Get Raíz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/BracoDireito/Cotovelo/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"BracoDireito",
+						"Cotovelo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstadoAtual",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/BracoDireito/Cotovelo/EstadoAtual",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"BracoDireito",
+						"Cotovelo",
+						"EstadoAtual"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProximoEstado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/BracoDireito/Cotovelo/ProximoEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"BracoDireito",
+						"Cotovelo",
+						"ProximoEstado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AnteriorEstado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"teste\""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/BracoDireito/Cotovelo/AnteriorEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"BracoDireito",
+						"Cotovelo",
+						"AnteriorEstado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MudarEstado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"LevementeContraido\""
+				},
+				"url": {
+					"raw": "https://localhost:44307/api/BracoDireito/Cotovelo/MudarEstado",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44307",
+					"path": [
+						"api",
+						"BracoDireito",
+						"Cotovelo",
+						"MudarEstado"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
